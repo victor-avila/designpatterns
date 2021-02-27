@@ -1,0 +1,10 @@
+- complicated objects (e.g., cars) aren't designed from scratch
+  - they reiterate existing desgins
+- an existing (partially or fully constructed) design is a prototype
+- we make a copy (clone) the prototype and customize it
+  - requires 'deep copy' support
+- we make the cloning convenient (e.g., via a factory)
+
+prototype
+a partially or fully initialized object that you copy (clone) and make use of
+ 

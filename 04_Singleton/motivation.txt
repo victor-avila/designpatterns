@@ -1,0 +1,16 @@
+
+a design pattern everyone loves to hate
+
+- for some components it only make sense to have one instance in the system
+ - database repository
+ - object factory, isn't supposed to have state
+- e.g., the constructor call is expensive
+ - we only do it once
+ - we provide anyone creating additional copies
+ - need to take care of lazy instantiation and thread safety
+
+ singleton
+a component which is instatiated only once
+
+
+

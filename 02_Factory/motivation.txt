@@ -1,0 +1,14 @@
+- object creation logic becomes too convoluted
+- constructor is not descriptive
+  name mandated by name of containing type
+  cannot overload with same set of argument types with different name
+  can turn into 'optional parameter hell', all paramas are optional and the user
+  has to know when to use some or the others
+- object creation (non-piecewise, unlike builder) can be outsorced to:
+  a separate function (factory method)
+  that may exists in a separate class (factory)
+  can create hierarchy of factories (abstract factory)
+
+factory
+a component responsible solely for the wholesale (not piecewise) creation of objects
+

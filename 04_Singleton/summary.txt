@@ -1,0 +1,5 @@
+- making a 'safe' singleton is easy: construct a static Lazy<T> and return its Value
+  there are other variations on the singleton like double check clocking and inner static class with a static constructor, but the example here is the safest and more useful constructo for making a singleton
+- singletons are difficult to test
+- instead of directly using a singleton, consider depending on an abstraction (e.g., an interface)
+- consider defining singleton lifetime in DI container, this is the socially acceptable way of using a singleton, altough the pattern states that you should prevent people from calling the constructor, if the system uses a DI container for the entire app, then it should not be a problem and there's always the option to check all the constructor calls to check that it's not being used

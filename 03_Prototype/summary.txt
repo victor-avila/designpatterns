@@ -1,0 +1,5 @@
+- to implement a prototype, partially construct an object and store it somewhere
+- clone the prototype
+  - implement your own deep copy functionality; or
+  - Serialize and Deserialize
+- Customize the resulting instance

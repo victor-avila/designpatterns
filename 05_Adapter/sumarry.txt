@@ -1,0 +1,8 @@
+a typical representation is the electrical adapter where there's an incoming voltage support and socket shape and then transform it to another standard, usually different between regions such as USA and europe
+we use a special device (an adapter) to give us the interface we require from the interface we have
+
+definition
+a construct which adapts an existing interface X to conform to the required interface Y
+
+you are getting interface X from some system but other system requires interface Y, so you need to connect one to the other and your write an extra piece of code to make that possible
+
