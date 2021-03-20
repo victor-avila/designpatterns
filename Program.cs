@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Adapter.GenericValueAdapter.Main.Run();
+   Adapter.AdapterInDependencyInjection.Main.Run();
   }
  }
 }
