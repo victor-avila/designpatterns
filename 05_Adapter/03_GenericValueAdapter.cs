@@ -1,6 +1,14 @@
 using static System.Console;
 using System.Collections.Generic;
 using System;
+// on this example there will be implemented 3 different things, in reality
+// the generic value adapter is just about the silly thing we have to do
+// in C# in order to propagate literal values like an int value as arguments
+// of a generic type
+// also there are addional topics like how to expand the hirarchy (partial specialization)
+// so that you get operations on numeric types on this case
+// an the last one is how to make a factory method which uses
+// recursive generics to propagate type information accross the inheritance hirarchy
 namespace Adapter.GenericValueAdapter
 {
  // this is a variation of the adapter pattern
@@ -49,6 +57,9 @@ namespace Adapter.GenericValueAdapter
    // example on 3D the size of the array will be 3 where T[0] is x, T[1] is y and T[2] is z
    data = new T[new D().Value];
   }
+  // this default constructor will work but the next factory method
+  // will allow to to return the class inheriting from here, the two
+  // do the same at the end
   public Vector(params T[] values)
   {
    var requiredSize = new D().Value;
@@ -75,11 +86,11 @@ namespace Adapter.GenericValueAdapter
    set => data[index] = value;
   }
  }
- public class VectorOfFloat<TSelf, D> : Vector<TSelf, float, D>
-  where D : IInteger, new()
-  where TSelf : Vector<TSelf, float, D>, new()
- {
- }
+
+ // to implement the operator plus (+) we have to do partial specialization
+ // as it can't be done above directly with generics, here we have
+ // access to the final type (int) and can sum its values, so this intermediate
+ // class is defined only to implement the operator plus on this case
  public class VectorOfInt<D> : Vector<VectorOfInt<D>, int, D>
   where D : IInteger, new()
  {
@@ -89,6 +100,7 @@ namespace Adapter.GenericValueAdapter
   public VectorOfInt(params int[] values) : base(values)
   {
   }
+  // lhs and rhs stand for Left and Right Hand Side
   public static VectorOfInt<D> operator +(VectorOfInt<D> lhs, VectorOfInt<D> rhs)
   {
    var result = new VectorOfInt<D>();
@@ -109,9 +121,19 @@ namespace Adapter.GenericValueAdapter
   {
   }
  }
+
+ // for VectorOfFloat and Vector3f we don't implement the constructors as we will
+ // use the factory method defined on Vector
+ public class VectorOfFloat<TSelf, D> : Vector<TSelf, float, D>
+  where D : IInteger, new()
+  where TSelf : Vector<TSelf, float, D>, new()
+ {
+ }
+ // here we declare the inheritance sending what type will be TSelf (<Vector3f,)
  public class Vector3f : VectorOfFloat<Vector3f, Dimensions.Three>
  {
  }
+
  public class Main
  {
   public static void Run()
@@ -119,7 +141,15 @@ namespace Adapter.GenericValueAdapter
    var v = new Vector2i();
    v[0] = 0;
    var vv = new Vector2i();
+   // here we take advantage of the plus operator defined on VectorOfInt
    var result = v + vv;
+   // al the TSelf thing is called recursive generics that is a 
+   // rare approach where we propagate additional type information
+   // up to the base class so that the factory method 
+   // defined on Vector returns the inner most inherited class,
+   // Vector3f on this case and we don't have to define 
+   // the constructors for each class inheriting from there as with Vector2i,
+   // the chain is Vector > VectorOfFloat > Vector3f
    Vector3f u = Vector3f.Create(3.5f, 2.2f, 1);
   }
  }
