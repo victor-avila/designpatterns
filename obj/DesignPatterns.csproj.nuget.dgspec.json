@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj": {}
+    "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj": {}
   },
   "projects": {
-    "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj": {
+    "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
+        "projectUniqueName": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
         "projectName": "DesignPatterns",
-        "projectPath": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
-        "packagesPath": "/Users/victor/.nuget/packages/",
-        "outputPath": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/obj/",
+        "projectPath": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
+        "packagesPath": "/Users/Victor/.nuget/packages/",
+        "outputPath": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/victor/.nuget/NuGet/NuGet.Config"
+          "/Users/Victor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -70,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

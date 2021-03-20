@@ -2300,12 +2300,11 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2339,12 +2338,11 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4686,19 +4684,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/victor/.nuget/packages/": {}
+    "/Users/Victor/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
+      "projectUniqueName": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
       "projectName": "DesignPatterns",
-      "projectPath": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
-      "packagesPath": "/Users/victor/.nuget/packages/",
-      "outputPath": "/Users/victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/obj/",
+      "projectPath": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/DesignPatterns.csproj",
+      "packagesPath": "/Users/Victor/.nuget/packages/",
+      "outputPath": "/Users/Victor/Library/Mobile Documents/com~apple~CloudDocs/Projects/DesignPatterns/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/victor/.nuget/NuGet/NuGet.Config"
+        "/Users/Victor/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -4754,7 +4756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

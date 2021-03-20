@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Adapter.AdapterCaching.Main.Run();
+   Adapter.GenericValueAdapter.Main.Run();
   }
  }
 }
