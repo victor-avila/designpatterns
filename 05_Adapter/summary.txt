@@ -1,0 +1,4 @@
+- implementing an adapter is easy
+- determine the API you have and the API you need
+- create a component which aggregates (has a reference to, ...) the adaptee
+- intermediate representations of state can pile up: use caching and other optimizations

@@ -1,3 +1,5 @@
+
+
 a typical representation is the electrical adapter where there's an incoming voltage support and socket shape and then transform it to another standard, usually different between regions such as USA and europe
 we use a special device (an adapter) to give us the interface we require from the interface we have
 
