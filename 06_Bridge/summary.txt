@@ -1,0 +1,4 @@
+
+- decouple abstraction from implementation, the whole of object oriented programming is at least in part this idea
+- both abstractions as their implementations can exists in their own hierarchies. You can simply take the functionality related to the operating systems and take it outside the main inheritance hierarchy and have them as a separated hierarchy that you then refer to. So we have the abstraction as one hierarchy, the implementation as another hierarchy and then we use aggregation to have one reference the other, typically having the base class of one reference the other
+

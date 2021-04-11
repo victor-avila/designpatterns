@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Adapter.AdapterInDependencyInjection.Main.Run();
+   Bridge.Bridge.Main.Run();
   }
  }
 }

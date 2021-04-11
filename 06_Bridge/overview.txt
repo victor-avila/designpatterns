@@ -1,0 +1,11 @@
+connecting components together through abstractions (interface or abstract class)
+
+a mechanism that decouples an interface or interface hierarchy from an implementation or implementation hierarchy
+ 
+- prevents a 'cartesian product' complexity exposion 
+  example:
+   - base class ThreadScheduler
+   - can be preemptive or cooperative
+   - can run on windows or unix
+   - end up with a 2x2 scenario: WindowsPTS, UnixPTS, WindowsCTS, UnixCTS
+- pattern bridge avoids the entity exposion
