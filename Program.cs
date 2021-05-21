@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Bridge.Bridge.Main.Run();
+   Composite.CompositeSpecification.Main.Run();
   }
  }
 }

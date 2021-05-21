@@ -1,0 +1,8 @@
+a mechanism for treating individual (scalar) objects and compositions of objects in a uniform manner
+
+objects use other objects' fields/properties/members through inheritance and composition
+composition let us make composed objects
+  e.g., a mathematical expression composed of simple expressions
+        a grouping of shapes thta consists of several shapes
+the pattern is used to treat both single (scalar) and composite (aggregate) objects in the same manner
+  i.e., Foo and Collection<Foo> have common APIs
