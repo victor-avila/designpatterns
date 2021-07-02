@@ -6,4 +6,5 @@
  - inherit from required object if possible; some objects are sealed
  - build a decorator, which simply references the decorated objects and adds behavior on top of the behavior of that objects
 
+
  

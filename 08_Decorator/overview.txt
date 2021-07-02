@@ -1,1 +1,1 @@
-add behavior to existing classes without really altering the classes themselves
+add behavior to existing classes without really altering the classes themselves or inheriting from them

@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Composite.CompositeSpecification.Main.Run();
+   Decorator.CustomStringBuilder.Main.Run();
   }
  }
 }
