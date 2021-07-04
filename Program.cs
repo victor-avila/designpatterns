@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Decorator.CustomStringBuilder.Main.Run();
+   Decorator.AdapterDecorator.Main.Run();
   }
  }
 }
