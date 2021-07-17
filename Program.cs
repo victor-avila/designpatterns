@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Decorator.MultiInhWithDefaultInterfaceMembers.Main.Run();
+   Decorator.DynamicDecoratorCompostion.Main.Run();
   }
  }
 }
