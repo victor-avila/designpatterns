@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Decorator.MultiInheritanceWithInterfaces.Main.Run();
+   Decorator.MultiInhWithDefaultInterfaceMembers.Main.Run();
   }
  }
 }
