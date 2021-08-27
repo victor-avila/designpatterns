@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Decorator.DetectingDecoratorCycles.Main.Run();
+   Decorator.StaticDecoratorComposition.Main.Run();
   }
  }
 }
