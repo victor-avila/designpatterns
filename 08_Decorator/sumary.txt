@@ -4,4 +4,4 @@
 - you cannot cast the decorator to the orginal object
 - in c# the decorator also exists in the static variation, which means that the layering of thecorator is not by calling their constructors but by specifying a type with generic arguments
  - X<Y<Foo>>
- - very limited due to inhability to inherit from type parameters, you cannot have the type Foo<T> (this is read as "type Foo of T") inheriting from T
+ - very limited in C# due to inhability to inherit from type parameters, you cannot have the type Foo<T> (this is read as "type Foo of T") inheriting from T
