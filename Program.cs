@@ -4,7 +4,7 @@
  {
   static void Main(string[] args)
   {
-   Decorator.StaticDecoratorComposition.Main.Run();
+   Decorator.DecoratorInDependencyInjection.Main.Run();
   }
  }
 }
